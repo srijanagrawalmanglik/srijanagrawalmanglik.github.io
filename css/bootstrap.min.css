@@ -1,0 +1,182 @@
+
+*,
+::after,
+::before {
+    box-sizing: border-box
+}
+
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2
+}
+
+.h1,
+h1 {
+    font-size: calc(1.375rem + 1.5vw)
+}
+
+@media (min-width:1200px) {
+    .h1,
+    h1 {
+        font-size: 2.5rem
+
+    }
+}
+.h2,
+h2 {
+    font-size: calc(1.325rem + .9vw)
+}
+
+@media (min-width:1200px) {
+    .h2,
+    h2 {
+        font-size: 2rem
+    }
+}
+
+.h3,
+h3 {
+    font-size: calc(1.3rem + .6vw)
+}
+
+@media (min-width:1200px) {
+    .h3,
+    h3 {
+        font-size: 1.75rem
+    }
+}
+
+.h4,
+h4 {
+    font-size: calc(1.275rem + .3vw)
+}
+
+@media (min-width:1200px) {
+    .h4,
+    h4 {
+        font-size: 1.5rem
+    }
+}
+
+.h5,
+h5 {
+    font-size: 1.25rem
+}
+.h6,
+h6 {
+    font-size: 1rem
+}
+
+p {
+    margin-top: 0;
+
+    margin-bottom: 1rem
+}
+
+.container{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto
+}
+
+@media (min-width:576px) {
+    .container {
+        max-width: 540px
+    }
+}
+
+@media (min-width:768px) {
+    .container{
+        max-width: 720px
+    }
+}
+
+@media (min-width:992px) {
+    .container{
+        max-width: 960px
+    }
+}
+
+@media (min-width:1200px) {
+    .container{
+        max-width: 1140px
+    }
+}
+
+@media (min-width:1400px) {
+    .container{
+        max-width: 1320px
+    }
+}
+
+.row1 {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x))
+}
+
+.row1>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+
+}
+
+
+
+
+
+@media (min-width:768px) {
+    
+    .col-md-31 {
+        flex: 0 0 auto;
+        width: 25%
+    }
+    
+    .col-md-91 {
+        flex: 0 0 auto;        width: 75%
+    }   
+
+}
+
+
+
+
+
+.nav1 {
+    --bs-nav-link-padding-x: 1rem;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: var(--bs-link-color);
+    --bs-nav-link-hover-color: var(--bs-link-hover-color);
+    --bs-nav-link-disabled-color: #6c757d;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none
+}
+
